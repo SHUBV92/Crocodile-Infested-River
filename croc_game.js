@@ -1,9 +1,8 @@
 function Game() {
   this.river = ["--P--", "--C--", "CC-CC", "CC-CC"];
-//   console.log(this.river);
+  console.log(this.river);
 
-  this.display = null
-
+  this.display = null;
 }
 
 Game.prototype.left1 = function() {
@@ -34,11 +33,22 @@ Game.prototype.neither1 = function() {
 Game.prototype.neither2 = function() {
   this.river = ["-----", "--C--", "CC-CC", "CCPCC"];
   console.log(this.river);
-  console.log("You have been eaten ");
+  console.log("You have Survived");
 };
 
-Game.prototype.print = function(){
-    this.display = this.river[0] + '\n' + this.river[1] + '\n' + this.river[2] + '\n' + this.river[3]
-    console.log(this.display)
-}
-``
+Game.prototype.print = function() {
+  this.display =
+    this.river[0] +
+    "\n" +
+    this.river[1] +
+    "\n" +
+    this.river[2] +
+    "\n" +
+    this.river[3];
+  console.log(this.display);
+};
+
+Game.prototype.win = function() {
+  if (this.river) {
+  }
+};

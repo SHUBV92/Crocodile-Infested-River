@@ -53,3 +53,9 @@
 
     Note: You can assume the player will never move outside the boundary of the river when they choose left and right. You can also assume the player will always enter either, right or netither. 
 
+
+    1: Move with keys 
+    2: If the player is in the position of the crocodile then make the program print 
+    'You were eaten!'
+    3: If the player has passed the river without being touched by the crocodile then print 'You have survived!'
+
